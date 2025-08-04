@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kadimi Kavya - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <p>Loading profile: Kadimi Kavya</p>
+    <p>Establishing terminal connection...</p>
+    <div class="loader"></div>
+    <p>System Status: Initializing...</p>
+  </div>
+
+  <!-- Portfolio UI -->
+  <div id="portfolio" style="display: none;">
+    <div class="sidebar">
+      <!-- ✅ Replace 'profile.jpg' with your actual image file in the 'assets/' folder -->
+      <img style="width:100px;" src="kavya.jpg" alt="Kavya" class="profile-pic">
+      
+      <h2>Kadimi Kavya</h2>
+      <p class="title">Frontend Developer</p>
+      <p>📍 Andhra Pradesh, India</p>
+      <p>📧 kavyakadimi1911@gmail.com</p>
+      <p>📞xxxxxxx </p>
+
+      <div class="icons">
+        <a href="https://github.com/kavyeah1911" target="_blank">🐙</a>
+        <a href="https://www.linkedin.com/in/kavya-kadimi-769651281/" target="_blank">🔗</a>
+      </div>
+
+      <!-- ✅ Replace 'resume.pdf' with your actual file inside 'assets/' -->
+      <a class="resume-btn" href="rs1.pdf" download>⬇ Resume</a>
+    </div>
+
+    <div class="terminal">
+      <p class="version">> Portfolio Terminal v1.0.0</p>
+      <p class="green-text">Welcome to my Interactive Portfolio Terminal!</p>
+      <p>Type <code>'help'</code> to see available commands.</p>
+      <p>Use arrow keys to navigate command history.</p>
+      <p>Last login: <span id="login-time"></span></p>
+
+      <div id="terminal-output"></div>
+      <span class="prompt">kavya@portfolio:~$</span>
+      <input type="text" id="commandInput" autocomplete="off" autofocus />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

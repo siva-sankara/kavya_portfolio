@@ -1,0 +1,162 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #000;
+  color: #0f0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Loading Screen */
+#loading-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #0f0;
+  height: 100vh;
+  font-size: 18px;
+  text-align: center;
+}
+
+.loader {
+  margin: 10px;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #0f0;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Layout */
+#portfolio {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 300px;
+  background-color: #111;
+  color: #0f0;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 2px solid #0f0;
+}
+
+.sidebar .profile-pic {
+  width: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #0f0;
+  margin-bottom: 15px;
+}
+
+.sidebar h2 {
+  color: #0f0;
+  font-size: 22px;
+}
+
+.sidebar .title {
+  color: #33ff33;
+  margin-bottom: 10px;
+}
+
+.sidebar p {
+  margin: 5px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.sidebar .icons a {
+  color: #0f0;
+  font-size: 20px;
+  margin: 10px;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.sidebar .icons a:hover {
+  transform: scale(1.2);
+}
+
+.resume-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #0f0;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.resume-btn:hover {
+  background-color: #33ff33;
+}
+
+/* Terminal */
+.terminal {
+  flex: 1;
+  padding: 25px;
+  background-color: #000;
+  color: #0f0;
+  overflow-y: auto;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.version {
+  color: #888;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.green-text {
+  color: #00ff00;
+  font-weight: bold;
+}
+
+#terminal-output {
+  margin: 15px 0;
+}
+
+.prompt {
+  color: #ff0;
+  font-weight: bold;
+}
+
+#commandInput {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #0f0;
+  color: #0f0;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.highlight {
+  color: #00ffff;
+  font-weight: bold;
+}
+
+a {
+  color: #0ff;
+  text-decoration: underline;
+}
